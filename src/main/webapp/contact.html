@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BonÀrea</title>
+        <!-- Insertamos el archivo CSS compilado y comprimido -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Theme opcional -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="container">
+            <header class="page-header">
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Sobre mi</a></li>
+                    <li><a href="#">Experiencia</a></li>
+                </ul>
+                <img src="logo-caixa-guissona-agrupa.png" alt="BonÀrea" />
+            </header>
+            <div class="jumbotron">
+                <h1>BonÀrea</h1>
+                <p class="text-justify">La A com a símbol de les nostres llars i la
+                    fulla verda com font de vida.
+                    L’energia del Sol i el carboni de l’aire són absorbits per la fulla
+                    que gràcies
+                    a la fotosíntesi genera l’oxigen, imprescindible per a la vida.La
+                    planta amb les
+                    seves arrels, l’aigua i els nutrients, creixerà i alimentarà als
+                    animals.
+                </p>
+                <form action = "show-contact.jsp" method = "POST">
+                    <div class="form-group">
+                        <label for="input-nom">Nom</label>
+                        <input type="text" class="form-control" id="input-nom"
+                               name="input-nom"
+                               placeholder="Entra nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-cognom">CogNom</label>
+                        <input type="text" class="form-control" id="input-cognom"
+                               name="input-cognom"
+                               placeholder="Entra cognom">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-email">Email</label>
+                        <input type="email" name="input-email" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="Entra email">
+                        <small id="emailHelp" class="form-text text-muted">Mai compartim l'email amb ningú.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div>
+                <p>&copy; 2021 BonÀrea</p>
+            </div>
+        </div>
+        <!--Insertamos jQuery dependencia de Bootstrap-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"/>
+        <!--Insertamos el archivo JS compilado y comprimido -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"/>
     </body>
 </html>
